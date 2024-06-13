@@ -13,6 +13,7 @@ public class LinearSearchService {
 
     //schrijf een linearSearch method die een int[] data en een int searchTerm als parameter accepteert
 
+    //schrijf een linearSearch method die een Student[] data en een studentNummer searchTerm als parameter accepteert
 
 
 }

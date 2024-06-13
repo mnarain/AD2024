@@ -3,12 +3,12 @@ package sr.unasat.ad.models;
 public class Student {
     private String firstname;
     private String lastname;
-    private String idNummer;
+    private String studentNummer;
 
-    public Student(String firstname, String lastname, String idNummer) {
+    public Student(String firstname, String lastname, String studentNummer) {
         this.firstname = firstname;
         this.lastname = lastname;
-        this.idNummer = idNummer;
+        this.studentNummer = studentNummer;
     }
 
     public String getFirstname() {
@@ -27,12 +27,12 @@ public class Student {
         this.lastname = lastname;
     }
 
-    public String getIdNummer() {
-        return idNummer;
+    public String getStudentNummer() {
+        return studentNummer;
     }
 
-    public void setIdNummer(String idNummer) {
-        this.idNummer = idNummer;
+    public void setStudentNummer(String studentNummer) {
+        this.studentNummer = studentNummer;
     }
 
     @Override
@@ -40,7 +40,7 @@ public class Student {
         return "Student{" +
                 "firstname='" + firstname + '\'' +
                 ", lastname='" + lastname + '\'' +
-                ", idNummer='" + idNummer + '\'' +
+                ", studentNummer='" + studentNummer + '\'' +
                 '}';
     }
 }
