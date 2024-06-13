@@ -12,6 +12,15 @@ public class Application {
         result = lss.linearSearchString("HTML", programingLanguages);
         System.out.println(result);
 
+
+        int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        System.out.println("komt nummer 3 voor in de dataset?");
+        int indexResult = lss.linearSearchInt(3, numbers);
+        System.out.println(indexResult);
+        System.out.println("komt nummer 20000 voor in de dataset?");
+         indexResult = lss.linearSearchInt(20000, numbers);
+        System.out.println(indexResult);
+
     }
 
 }
