@@ -11,4 +11,8 @@ public class LinearSearchService {
         return "De text " + searchTerm + " komt niet voor in deze dataset"; //term not found
     }
 
+    //schrijf een linearSearch method die een int[] data en een int searchTerm als parameter accepteert
+
+
+
 }
