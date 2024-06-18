@@ -9,7 +9,7 @@ public class BubbleSort {
     Auxiliary Space: O(1)
     Boundary Cases: Bubble sort takes minimum time (Order of n) when elements are already sorted.
     */
-    static int[] sort(int[] array) {
+    public int[] sort(int[] array) {
         boolean isSorted = false;
         int lastUnsorted = array.length - 1; // set index of the last element
         while (!isSorted) {
