@@ -24,16 +24,16 @@ public class BinarySearchService {
     }
 
 
-
     public String findByProgrammingLanguage(String programmingLanguage, String[] programmingLanguageList) {
 
         return "De text " + programmingLanguage + " komt niet voor in deze dataset"; //term not found
     }
 
 
-   public Student findByStudentNumber(String studentNummer, Student[] studentList) {
+    public Student findByStudentNumber(String studentNummer, Student[] studentList) {
 
         return null; //term not found
+
     }
 
 }
