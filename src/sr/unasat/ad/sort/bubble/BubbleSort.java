@@ -36,7 +36,7 @@ public class BubbleSort {
     }
 
 
-    //scherijf een bubblesoret gebaseert op de persoon class en vergelijk de fullname van de personen.
+    //schrijf een bubblesoret gebaseert op de persoon class en vergelijk de fullname van de personen.
     //Tip gebruik een variant van de compareTo method. de fullname is niet case sensitive.
 
 
