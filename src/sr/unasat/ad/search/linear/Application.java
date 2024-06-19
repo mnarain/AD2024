@@ -6,16 +6,14 @@ public class Application {
 
     public static void main(String[] args) {
         LinearSearchService lss = new LinearSearchService();
-/*
         String[] programingLanguages = {"C", "C++", "Java", "Python",
                 "JavaScript", "Ruby", "PHP", "Swift", "Kotlin", "Go"};
-        String result = lss.findByProgrammingLanguage("Java", programingLanguages);
+        String result = lss.findByProgrammingLanguage("JAva", programingLanguages);
         System.out.println(result);
 
         result = lss.findByProgrammingLanguage("HTML", programingLanguages);
         System.out.println(result);
 
-*/
 
         int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         System.out.println("komt nummer 3 voor in de dataset?");
@@ -25,7 +23,7 @@ public class Application {
         indexResult = lss.findByNumber(20000, numbers);
         System.out.println(indexResult);
 
-/*        Student[] studentList = {
+        Student[] studentList = {
                 new Student("John", "Doe", "123456"),
                 new Student("Jane", "Doe", "123457"),
                 new Student("Alice", "Doe", "123458"),
@@ -36,7 +34,7 @@ public class Application {
         System.out.println(studentFound);
 
         studentFound = lss.findByStudentNumber("120058", studentList);
-        System.out.println(studentFound);*/
+        System.out.println(studentFound);
     }
 
 }
