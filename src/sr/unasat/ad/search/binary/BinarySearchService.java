@@ -11,7 +11,7 @@ public class BinarySearchService {
         int right = sortedArray.length - 1; // max index
         while (left <= right) {
             int mid = left + ((right - left) / 2);
-
+            int mid2 = (right + left) / 2;
             if (sortedArray[mid] == term) { // search term found
                 return mid; // return sortedArray index of search term
             } else if (term < sortedArray[mid]) { // search term is smaller than mid point value

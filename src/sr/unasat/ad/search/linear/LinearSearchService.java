@@ -12,7 +12,7 @@ public class LinearSearchService {
         }
         return "De text " + programmingLanguage + " komt niet voor in deze dataset"; //term not found
     }
-    //Big O notation: O(n)
+    //Time Complexity: O(n)
     //schrijf een linearSearch method die een int[] data en een int searchTerm als parameter accepteert
     public int findByNumber(int number, int[] numbers) {
         for (int i = 0; i < numbers.length; i++) {
