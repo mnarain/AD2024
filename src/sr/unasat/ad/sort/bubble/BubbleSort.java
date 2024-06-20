@@ -1,5 +1,8 @@
 package sr.unasat.ad.sort.bubble;
 
+import sr.unasat.ad.models.Person;
+import sr.unasat.ad.models.Student;
+
 public class BubbleSort {
 
     /*
@@ -36,8 +39,18 @@ public class BubbleSort {
     }
 
 
-    //scherijf een bubblesoret gebaseert op de persoon class en vergelijk de fullname van de personen.
+    //schrijf een bubblesort gebaseert op een lijst van programming languages.
     //Tip gebruik een variant van de compareTo method. de fullname is niet case sensitive.
+    public String[] sort(String[] programmingLanguageList) {
+   //bubblesort logica om een lijst van programming languages te sorteren
+        return programmingLanguageList; //lijst van gesorteerde programming languages returnen
+    }
 
+    //schrijf een bubblesort gebaseert op de persoon class en vergelijk de fullname van de personen.
+    //Tip gebruik een variant van de compareTo method. de fullname is niet case sensitive.
+    public Person[] sort( Person[] personList) {
+        //bubblesort logica om een lijst van personen te sorteren
+        return personList; //lijst van gesorteerde personen returnen op basis van fullname
+    }
 
 }
