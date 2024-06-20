@@ -11,7 +11,6 @@ public class BinarySearchService {
         int right = sortedArray.length - 1; // max index
         while (left <= right) {
             int mid = left + ((right - left) / 2);
-            int mid2 = (right + left) / 2;
             if (sortedArray[mid] == term) { // search term found
                 return mid; // return sortedArray index of search term
             } else if (term < sortedArray[mid]) { // search term is smaller than mid point value
@@ -26,7 +25,18 @@ public class BinarySearchService {
 
 
     public String findByProgrammingLanguage(String programmingLanguage, String[] programmingLanguageList) {
-
+        int left = 0; // min index
+        int right = programmingLanguageList.length - 1; // max index
+        while (left <= right) {
+            int mid = left + ((right - left) / 2);
+            if (programmingLanguageList[mid].equalsIgnoreCase(programmingLanguage)) { // search term found
+                return programmingLanguageList[mid]; // return sortedArray value of search term
+            } else if (programmingLanguage.compareToIgnoreCase(programmingLanguageList[mid]) < 0)   { // search term is smaller than mid point value
+                right = mid - 1; // set right bound
+            } else {
+                left = mid + 1; // set left bound
+            }
+        }
         return "De text " + programmingLanguage + " komt niet voor in deze dataset"; //term not found
     }
 
