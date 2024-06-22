@@ -42,7 +42,18 @@ public class BinarySearchService {
 
 
    public Student findByStudentNumber(String studentNummer, Student[] studentList) {
-
+       int left = 0; // min index
+       int right = studentList.length - 1; // max index
+       while (left <= right) {
+           int mid = left + ((right - left) / 2);
+           if (studentList[mid].getStudentNummer().equalsIgnoreCase(studentNummer)) { // search term found
+               return studentList[mid]; // return sortedArray value of search term
+           } else if (studentNummer.compareToIgnoreCase(studentList[mid].getStudentNummer()) < 0)   { // search term is smaller than mid point value
+               right = mid - 1; // set right bound
+           } else {
+               left = mid + 1; // set left bound
+           }
+       }
         return null; //term not found
     }
 

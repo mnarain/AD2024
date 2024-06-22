@@ -1,5 +1,6 @@
 package sr.unasat.ad.search.linear;
 
+
 import sr.unasat.ad.models.Student;
 
 public class Application {
@@ -35,6 +36,7 @@ public class Application {
 
         studentFound = lss.findByStudentNumber("120058", studentList);
         System.out.println(studentFound);
+
     }
 
 }
