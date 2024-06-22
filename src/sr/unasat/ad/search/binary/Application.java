@@ -11,6 +11,7 @@ public class Application {
         BinarySearchService bss = new BinarySearchService();
         String[] programingLanguages = {"C", "C++", "Java", "Python",
                 "JavaScript", "Ruby", "PHP", "Swift", "Kotlin", "Go"};
+        Arrays.sort(programingLanguages);
         String result = bss.findByProgrammingLanguage("Java", programingLanguages);
         System.out.println(result);
 
