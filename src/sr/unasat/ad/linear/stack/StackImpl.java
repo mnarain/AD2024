@@ -45,6 +45,11 @@ public class StackImpl {
     }
 
 
+    //gebruik deze method om de elementen in de stack om te draaien en achterste voren te tonen
+    public int[] reverseOrderArray() {
+        //pop from stack
 
+        return null;
+    }
 //--------------------------------------------------------------
 } // end class StackImpl
