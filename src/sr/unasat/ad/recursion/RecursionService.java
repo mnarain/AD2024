@@ -22,7 +22,7 @@ public class RecursionService {
             return;
         }
         System.out.println("recursiveCallCount " + recursiveCallCount);
-        countToTenRecursive(n + 1, ++recursiveCallCount);
+        countToTenRecursive(n + 1, recursiveCallCount + 1);
         System.out.println("after recursive call " + n);
     }
 
@@ -41,7 +41,7 @@ public class RecursionService {
     public void findByNumberRecursive(int number, int[] numbers, int index) {
 
         if (index >= numbers.length) { //base case
-            System.out.println("term not found" + index);
+            System.out.println("term not found");
             return;
         }
 
@@ -50,7 +50,7 @@ public class RecursionService {
             return;
         }
 
-        findByNumberRecursive(number, numbers,++index);
+        findByNumberRecursive(number, numbers,index+1);
     }
 
 }
