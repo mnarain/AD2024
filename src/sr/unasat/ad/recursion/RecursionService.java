@@ -26,6 +26,20 @@ public class RecursionService {
         System.out.println("after recursive call " + n);
     }
 
+
+    //count to ten recursive
+    public void countPlusTwoToThirthyRecursive(int n, int recursiveCallCount) {
+        if (n == 1) {
+            System.out.println("this is the recursive aproach");
+        }
+        if (n > 30) {
+            return;
+        }
+        System.out.println("count " + n);
+        countPlusTwoToThirthyRecursive(n + 2, recursiveCallCount + 1);
+
+    }
+
     //imperative approach linear search
     public void findByNumberImperative(int number, int[] numbers) {
         for (int i = 0; i < numbers.length; i++) {

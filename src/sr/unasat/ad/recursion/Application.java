@@ -9,6 +9,7 @@ public class Application {
         int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         rs.findByNumberImperative(2, numbers);
         rs.findByNumberRecursive(3, numbers, 0);
+        rs.countPlusTwoToThirthyRecursive(1, 1);
     }
 
 }
