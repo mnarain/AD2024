@@ -24,8 +24,17 @@ public class Customer {
         this.lastName = lastName;
     }
 
-    //create method that returns the initials capitalized
-    public String getInitials() {
-        return this.firstName.substring(0, 1).toUpperCase() + this.lastName.substring(0, 1).toUpperCase();
+    //create method that returns the full name of the customer
+    public String getFullName() {
+        return lastName + " " + firstName;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                ", lastName='" + lastName + '\'' +
+                "firstName='" + firstName + '\'' +
+                '}';
     }
 }
