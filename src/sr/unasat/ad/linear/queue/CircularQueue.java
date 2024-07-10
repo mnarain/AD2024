@@ -28,6 +28,7 @@ public class CircularQueue {
         boolean maxIndex = (rear == maxSize - 1);
         if (maxIndex && queArray[0] == null) { // deal with wraparound
             rear = -1;
+            maxIndex = false;
         }
 
         if (!maxIndex && queArray[rear + 1] == null) {// check array out of bounds and
