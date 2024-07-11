@@ -2,10 +2,10 @@ package sr.unasat.ad.linear.linked.list;
 
 import sr.unasat.ad.models.Car;
 
-public class LinkedList {
+public class DoubleEndedLinkedList {
     private Link first;
 
-    public LinkedList() {
+    public DoubleEndedLinkedList() {
         first = null;
     }
 
