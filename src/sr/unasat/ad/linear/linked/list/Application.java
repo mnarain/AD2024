@@ -11,5 +11,13 @@ public class Application {
         linkedList.insertFirst(new Car("Audi"));
         linkedList.insertFirst(new Car("Mercedes"));
         linkedList.displayList();
+        if (linkedList.find("Tesla") != null) {
+            linkedList.find("Tesla").display();
+        } else {
+            System.out.println("We hebben alleen een mazda 626 in voorraad");
+        }
+
+
+        linkedList.delete("BMW");
     }
 }

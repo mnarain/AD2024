@@ -2,11 +2,11 @@ package sr.unasat.ad.linear.linked.list;
 
 import sr.unasat.ad.models.Car;
 
-public class DoubleEndedLinkedList {
+public class DoublyLinkedList {
     private Link first;
     private Link last;
 
-    public DoubleEndedLinkedList() {
+    public DoublyLinkedList() {
         first = null;
         last = null;
     }
